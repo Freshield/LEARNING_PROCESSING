@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<eclipse-userlibraries version="2">
+    <library name="ProcessingCore" systemlibrary="false">
+        <archive path="D:/MEGA/LEARN_BYSELF/Processing/processing-3.1-windows32/LEARNING_PROCESSING/try_eclipse/core.jar"/>
+        <archive path="D:/MEGA/LEARN_BYSELF/Processing/processing-3.1-windows32/LEARNING_PROCESSING/try_eclipse/gluegen-rt.jar"/>
+        <archive path="D:/MEGA/LEARN_BYSELF/Processing/processing-3.1-windows32/LEARNING_PROCESSING/try_eclipse/gluegen-rt-natives-windows-amd64.jar"/>
+        <archive path="D:/MEGA/LEARN_BYSELF/Processing/processing-3.1-windows32/LEARNING_PROCESSING/try_eclipse/gluegen-rt-natives-windows-i586.jar"/>
+        <archive path="D:/MEGA/LEARN_BYSELF/Processing/processing-3.1-windows32/LEARNING_PROCESSING/try_eclipse/jogl-all.jar"/>
+        <archive path="D:/MEGA/LEARN_BYSELF/Processing/processing-3.1-windows32/LEARNING_PROCESSING/try_eclipse/jogl-all-natives-windows-amd64.jar"/>
+        <archive path="D:/MEGA/LEARN_BYSELF/Processing/processing-3.1-windows32/LEARNING_PROCESSING/try_eclipse/jogl-all-natives-windows-i586.jar"/>
+    </library>
+</eclipse-userlibraries>
