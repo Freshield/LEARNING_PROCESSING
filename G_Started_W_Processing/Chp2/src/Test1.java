@@ -15,10 +15,16 @@ public class Test1 extends PApplet {
     }
 
     public void setup(){
-
+        smooth();
     }
 
     public void draw(){
+        if (mousePressed){
+            fill(0);
+        } else {
+            fill(255);
+        }
+        ellipse(mouseX,mouseY,80,80);
 
     }
 
