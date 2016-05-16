@@ -24,7 +24,10 @@ public class Test1 extends PApplet {
         } else {
             fill(255);
         }
-        ellipse(mouseX,mouseY,80,80);
+        if (!(mouseX == 0 && mouseY ==0)){
+            ellipse(mouseX,mouseY,80,80);
+        }
+
 
     }
 

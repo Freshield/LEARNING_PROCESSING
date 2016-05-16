@@ -16,6 +16,7 @@ public class Chp3 extends PApplet {
     }
 
     public void setup(){
+
         smooth();
     }
 
