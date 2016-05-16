@@ -12,12 +12,12 @@ public class Chp3 extends PApplet {
 
     public void settings(){
         super.settings();
-        size(800,800);
+        size(800,600);
     }
 
     public void setup(){
 
-        smooth();
+        
     }
 
     public void draw(){
