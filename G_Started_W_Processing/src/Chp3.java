@@ -20,15 +20,6 @@ public class Chp3 extends PApplet {
     }
 
     public void draw(){
-        if (mousePressed){
-            fill(0);
-            stroke(255);
-        } else {
-            fill(255);
-            stroke(0);
-
-        }
-        ellipse(mouseX,mouseY,80,80);
 
     }
 
