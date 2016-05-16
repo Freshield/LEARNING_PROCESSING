@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="82f69655-64bc-4b91-bd76-decf24e93082" name="Default" comment="" />
-    <ignored path="Chp1.iws" />
+    <list default="true" id="5686040b-61ea-491f-ba64-e75c2e2c65b7" name="Default" comment="" />
+    <ignored path="Chp2.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -19,7 +19,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="Chp1" />
+    <favorites_list name="Chp2" />
   </component>
   <component name="FileEditorManager">
     <leaf>
@@ -27,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/src/Test1.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1152">
-              <caret line="24" column="1" selection-start-line="4" selection-start-column="3" selection-end-line="24" selection-end-column="1" />
+              <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
               <folding>
                 <element signature="e#160#161#0" expanded="true" />
                 <element signature="e#197#198#0" expanded="true" />
@@ -94,33 +94,33 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Chp1" />
+              <option name="myItemId" value="Chp2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Chp1" />
+              <option name="myItemId" value="Chp2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Chp1" />
+              <option name="myItemId" value="Chp2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Chp1" />
+              <option name="myItemId" value="Chp2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Chp1" />
+              <option name="myItemId" value="Chp2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -436,7 +436,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Chp1" />
+      <module name="Chp2" />
       <envs />
       <method />
     </configuration>
@@ -544,17 +544,17 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="82f69655-64bc-4b91-bd76-decf24e93082" name="Default" comment="" />
-      <created>1463426524638</created>
+      <changelist id="5686040b-61ea-491f-ba64-e75c2e2c65b7" name="Default" comment="" />
+      <created>1463428026200</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1463426524638</updated>
-      <workItem from="1463426528627" duration="1285000" />
+      <updated>1463428026200</updated>
+      <workItem from="1463428028910" duration="61000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1285000" />
+    <option name="totallyTimeSpent" value="61000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3232" height="1732" extended-state="6" />
@@ -597,7 +597,7 @@
     <entry file="file://$PROJECT_DIR$/src/Test1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1152">
-          <caret line="24" column="1" selection-start-line="4" selection-start-column="3" selection-end-line="24" selection-end-column="1" />
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
           <folding>
             <element signature="e#160#161#0" expanded="true" />
             <element signature="e#197#198#0" expanded="true" />
@@ -657,7 +657,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Chp1</last-edited>
+          <last-edited>Chp2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -670,7 +670,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Chp1</last-edited>
+          <last-edited>core</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
