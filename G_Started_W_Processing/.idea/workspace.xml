@@ -26,8 +26,8 @@
       <file leaf-file-name="Chp3.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Chp3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1000">
-              <caret line="75" column="26" selection-start-line="71" selection-start-column="19" selection-end-line="75" selection-end-column="26" />
+            <state relative-caret-position="856">
+              <caret line="98" column="22" selection-start-line="98" selection-start-column="22" selection-end-line="98" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -580,12 +580,12 @@
       <option name="presentableId" value="Default" />
       <updated>1463429664401</updated>
       <workItem from="1463429667346" duration="1555000" />
-      <workItem from="1463439922241" duration="3275000" />
+      <workItem from="1463439922241" duration="3733000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4830000" />
+    <option name="totallyTimeSpent" value="5288000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3232" height="1732" extended-state="6" />
@@ -663,8 +663,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Chp3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1000">
-          <caret line="75" column="26" selection-start-line="71" selection-start-column="19" selection-end-line="75" selection-end-column="26" />
+        <state relative-caret-position="856">
+          <caret line="98" column="22" selection-start-line="98" selection-start-column="22" selection-end-line="98" selection-end-column="22" />
           <folding />
         </state>
       </provider>
