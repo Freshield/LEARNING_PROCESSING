@@ -22,13 +22,19 @@ public class Chp5 extends PApplet{
     int diameter = 380;
 
     public void setup(){
-        fill(0,102);
-        noStroke();
+//        fill(0,102);
+//        noStroke();
+//        strokeWeight(4);
+        stroke(0,102);
     }
 
     public void draw(){
-        background(204);
-        ellipse(mouseX,mouseY,9,9);
+//        background(204);
+//        ellipse(mouseX,mouseY,9,9);
+//        line(mouseX,mouseY,pmouseX,pmouseY);
+//        float weight = dist(mouseX,mouseY,pmouseX,pmouseY);
+//        strokeWeight(weight);
+//        line(mouseX,mouseY,pmouseX,pmouseY);
 
     }
 }
