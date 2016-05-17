@@ -34,7 +34,7 @@ public class Chp5 extends PApplet{
 //        noStroke();
 //        strokeWeight(4);
 //        stroke(12);
-        strokeWeight(12);
+        strokeWeight(30);
     }
 
     public void draw(){
@@ -69,7 +69,18 @@ public class Chp5 extends PApplet{
 //        float mx = map(mouseX,0,width,60,180);
 //        line(120,60,mx,mouseY);
 
-        
+        background(204);
+        stroke(102);
+        line(40,0,70,height);
+        if (mousePressed == true) {
+            if (mouseButton == LEFT) {
+                stroke(255);
+            } else {
+                stroke(0);
+            }
+            line(0,70,width,50);
+        }
+
 
     }
 }
