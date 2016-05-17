@@ -23,7 +23,9 @@ public class Chp5 extends PApplet{
 
     float x;
     float y;
-    float easing = 0.04f;
+    float px;
+    float py;
+    float easing = 0.05f;
     float diameter = 12;
 
 
@@ -31,7 +33,8 @@ public class Chp5 extends PApplet{
 //        fill(0,102);
 //        noStroke();
 //        strokeWeight(4);
-        stroke(0,102);
+//        stroke(12);
+        strokeWeight(12);
     }
 
     public void draw(){
@@ -41,12 +44,32 @@ public class Chp5 extends PApplet{
 //        float weight = dist(mouseX,mouseY,pmouseX,pmouseY);
 //        strokeWeight(weight);
 //        line(mouseX,mouseY,pmouseX,pmouseY);
-        float targetX = mouseX;
-        x += (targetX - x) * easing;
-        float targetY = mouseY;
-        y += (targetY - y) * easing;
-        ellipse(x,y,12,12);
-        println(targetX+" : "+x);
+//        float targetX = mouseX;
+//        x += (targetX - x) * easing;
+//        float targetY = mouseY;
+//        y += (targetY - y) * easing;
+//        ellipse(x,y,12,12);
+//        println(targetX+" : "+x);
+//        float targetX = mouseX;
+
+//        x += (targetX - x)*easing;
+//        float targetY = mouseY;
+//        y += (targetY - y)*easing;
+//        float weight = dist(x,y,px,py);
+//        strokeWeight(weight);
+//        line(x,y,px,py);
+//        py = y;
+//        px = x;
+
+//        background(204);
+//        stroke(255);
+//        line(120,60,mouseX,mouseY);
+//        stroke(0);
+//        float mx = mouseX/2 + 60;
+//        float mx = map(mouseX,0,width,60,180);
+//        line(120,60,mx,mouseY);
+
+        
 
     }
 }
