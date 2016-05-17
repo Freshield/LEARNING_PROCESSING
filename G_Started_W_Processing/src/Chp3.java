@@ -112,6 +112,11 @@ public class Chp3 extends PApplet {
         line(276,257,276,162);
         line(286,257,286,162);
 
+        //antena
+        line(276,162,236,109);
+        line(276,162,306,53);
+        line(276,162,342,177);
+
         //body
         noStroke();
         fill(102);
