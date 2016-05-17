@@ -17,13 +17,18 @@ public class Chp5 extends PApplet{
         smooth();
     }
 
+    int x = 280;
+    int y = -100;
+    int diameter = 380;
+
     public void setup(){
-
-
+        fill(0,102);
+        noStroke();
     }
 
     public void draw(){
-        println("I'm drawing");
-        println(frameCount);
+        background(204);
+        ellipse(mouseX,mouseY,9,9);
+
     }
 }
