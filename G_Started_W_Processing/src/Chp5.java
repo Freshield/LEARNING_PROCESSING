@@ -17,9 +17,15 @@ public class Chp5 extends PApplet{
         smooth();
     }
 
-    int x = 280;
-    int y = -100;
-    int diameter = 380;
+//    int x = 280;
+//    int y = -100;
+//    int diameter = 380;
+
+    float x;
+    float y;
+    float easing = 0.04f;
+    float diameter = 12;
+
 
     public void setup(){
 //        fill(0,102);
@@ -35,6 +41,12 @@ public class Chp5 extends PApplet{
 //        float weight = dist(mouseX,mouseY,pmouseX,pmouseY);
 //        strokeWeight(weight);
 //        line(mouseX,mouseY,pmouseX,pmouseY);
+        float targetX = mouseX;
+        x += (targetX - x) * easing;
+        float targetY = mouseY;
+        y += (targetY - y) * easing;
+        ellipse(x,y,12,12);
+        println(targetX+" : "+x);
 
     }
 }
