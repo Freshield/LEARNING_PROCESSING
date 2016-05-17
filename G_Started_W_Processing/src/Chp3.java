@@ -13,13 +13,13 @@ public class Chp3 extends PApplet {
     public void settings(){
         super.settings();
         size(880,720);
-        smooth();
+
     }
 
     public void setup(){
 
 //        smooth();
-
+        smooth();
     }
 
     public void draw(){
@@ -49,7 +49,35 @@ public class Chp3 extends PApplet {
 //        strokeWeight(20);
 //
 //        ellipse(400,60,90,90);
-        
+//        strokeWeight(12);
+//        strokeJoin(ROUND);
+//        rect(140,125,170,170);
+//        strokeJoin(BEVEL);
+//        rect(240,325,170,170);
+//        strokeCap(SQUARE);
+//        line(270,225,340,295);
+//        strokeCap(ROUND);
+//        line(350,425,420,495);
+
+        //background(0);
+//        fill(153);
+//        stroke(0);
+//        ellipse(132,82,200,200);
+//        noFill();
+//        ellipse(228,-16,200,200);
+//
+//
+//        noStroke();
+//        ellipse(268,118,200,200);
+        noStroke();
+        background(0,26,51);
+        fill(255,0,0,160);
+        ellipse(132,82,200,200);
+        fill(0,255,0,160);
+        ellipse(228,-16,200,200);
+        fill(0,0,255,160);
+        ellipse(268,118,200,200);
+
     }
 
 }
