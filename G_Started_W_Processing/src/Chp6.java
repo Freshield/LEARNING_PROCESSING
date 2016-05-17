@@ -14,6 +14,14 @@ public class Chp6 extends PApplet {
     String quote = "That's one small step for man...";
     PShape network;
 
+    PShape bot1;
+    PShape bot2;
+    PShape bot3;
+    PImage landscape;
+
+    float easing = 0.05f;
+    float offset = 0;
+
     public static void main(String[] args) {
 
         PApplet.main("Chp6");
@@ -21,7 +29,7 @@ public class Chp6 extends PApplet {
 
     public void settings(){
         super.settings();
-        size(720,480);
+        size(1920,1080);
         smooth();
 
 
@@ -34,8 +42,12 @@ public class Chp6 extends PApplet {
 //        img1 = loadImage("clouds.png");
 //        font = loadFont("TimeScrD-Medi-48.vlw");
 //        textFont(font);
-        network = loadShape("network.svg");
-        shapeMode(CENTER);
+//        network = loadShape("network.svg");
+//        shapeMode(CENTER);
+        bot1 = loadShape("robot1.svg");
+        bot2 = loadShape("robot2.svg");
+        bot3 = loadShape("robot3.svg");
+        landscape = loadImage("background.jpg");
     }
 
     public void draw(){
@@ -59,6 +71,23 @@ public class Chp6 extends PApplet {
 //        background(0);
 //        shape(network,30,10);
 //        shape(network,180,10,280,280);
+
+//        background(0);
+//        float diameter = map(mouseX,0,width,10,800);
+//        shape(network,120,60,diameter,diameter);
+
+        background(landscape);
+
+        float targetOffset = map(mouseY,0,height,-40,40);
+        offset += (targetOffset - offset)*easing;
+
+        shape(bot1,85+offset,65);
+
+        float smallerOffset = offset * 0.7f;
+        shape(bot2,510+smallerOffset,140,78,248);
+
+        smallerOffset *= -0.5f;
+        shape(bot3,410+smallerOffset,225,39,124);
 
     }
 }
