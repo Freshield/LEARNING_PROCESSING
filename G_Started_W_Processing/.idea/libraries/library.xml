@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="library">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/library" />
+      <root url="file://$PROJECT_DIR$/library/processing-master/processing-master/java/libraries/pdf/src" />
+    </SOURCES>
+  </library>
+</component>
