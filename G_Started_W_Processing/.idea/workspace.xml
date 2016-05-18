@@ -78,8 +78,8 @@
       <file leaf-file-name="Chp8.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Chp8.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1068">
-              <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+            <state relative-caret-position="1344">
+              <caret line="59" column="16" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -709,12 +709,12 @@
       <workItem from="1463450853837" duration="1470000" />
       <workItem from="1463505486582" duration="10269000" />
       <workItem from="1463534065796" duration="5696000" />
-      <workItem from="1463588092390" duration="806000" />
+      <workItem from="1463588092390" duration="1879000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26276000" />
+    <option name="totallyTimeSpent" value="27349000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3232" height="1732" extended-state="6" />
@@ -941,8 +941,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Chp8.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1068">
-          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+        <state relative-caret-position="1344">
+          <caret line="59" column="16" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
           <folding />
         </state>
       </provider>
