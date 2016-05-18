@@ -38,20 +38,32 @@ public class Chp7 extends PApplet {
 //    float offset = 60;
 //    float scalar = 40;
 //    float speed = 0.5f;
+//
+//    float angle = 0.0f;
+//    float offset = 60;
+//    float scalar = 2;
+//    float speed = 0.05f;
 
+//    float angle = 0.0f;
+//    float angleDirection = 1;
+//    float speed = 0.005f;
+
+    float x = 180;
+    float y = 400;
+    float bodyHeight = 153;
+    float neckHeight = 56;
+    float radius = 45;
     float angle = 0.0f;
-    float offset = 60;
-    float scalar = 2;
-    float speed = 0.05f;
 
     public void settings(){
         super.settings();
-        size(400,300);
+        size(1400,1300);
         smooth();
     }
 
     public void setup(){
-//        ellipseMode(RADIUS);
+        ellipseMode(RADIUS);
+//        background(204);
     }
 
     public void draw(){
@@ -140,5 +152,88 @@ public class Chp7 extends PApplet {
 //        ellipse(x,y,2,2);
 //        angle += speed;
 //        scalar += speed;
+//        pushMatrix();
+//        translate(mouseX,mouseY);
+//        rect(0,0,30,30);
+//        translate(-mouseX,-mouseY);
+//        popMatrix();
+//        translate(35,10);
+//        rect(0,0,15,15);
+
+//        translate(mouseX,mouseY);
+//        rotate(angle);
+//        rect(-15,-15,30,30);
+//        angle += 0.1;
+
+//        translate(mouseX,mouseY);
+//        float scalar = sin(angle)+2;
+//        scale(scalar);
+//        strokeWeight(1.0f / scalar);
+//        rect(-15,-15,30,30);
+//        angle += 0.1;
+
+//        background(204);
+//        translate(20,25);
+//        rotate(angle);
+//        strokeWeight(12);
+//        line(0,0,40,0);
+//        translate(40,0);
+//        rotate(angle*2.0f);
+//        strokeWeight(6);
+//        line(0,0,30,0);
+//        translate(30,0);
+//        rotate(angle*2.5f);
+//        strokeWeight(3);
+//        line(0,0,20,0);
+//
+//        angle += speed * angleDirection;
+//        if ((angle > QUARTER_PI) || (angle < 0)) {
+//            angleDirection *= -1;
+//        }
+
+        background(255);
+
+        x += random(-4,4);
+        y += random(-1,1);
+
+        neckHeight = 80 + sin(angle) * 30;
+        angle += 0.05;
+
+        float ny = y - bodyHeight - neckHeight - radius;
+
+        //neck
+
+        stroke(102);
+        line(x+2,y-bodyHeight,x+2,ny);
+        line(x+12,y-bodyHeight,x+12,ny);
+        line(x+22,y-bodyHeight,x+22,ny);
+
+        //antenna
+        line(x+12,ny,x-18,ny-43);
+        line(x+12,ny,x+42,ny-99);
+        line(x+12,ny,x+78,ny+15);
+
+
+        //body
+        noStroke();
+        fill(102);
+        ellipse(x,y-33,33,33);
+        fill(0);
+        rect(x-45,y-bodyHeight,90,bodyHeight-33);
+        fill(102);
+        rect(x-45,y-bodyHeight+17,90,6);
+
+        //head
+        fill(0);
+        ellipse(x+12,ny,radius,radius);
+        fill(255);
+        ellipse(x+24,ny-6,14,14);
+        fill(0);
+        ellipse(x+24,ny-6,3,3);
+        fill(153);
+        ellipse(x,ny-8,5,5);
+        ellipse(x+30,ny-26,4,4);
+        ellipse(x+41,ny+6,3,3);
+
     }
 }
