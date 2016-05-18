@@ -68,12 +68,9 @@
       <file leaf-file-name="Chp7.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Chp7.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1104">
-              <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-              <folding>
-                <element signature="e#358#359#0" expanded="true" />
-                <element signature="e#393#394#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="823">
+              <caret line="70" column="17" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -700,12 +697,12 @@
       <workItem from="1463439922241" duration="6480000" />
       <workItem from="1463450853837" duration="1470000" />
       <workItem from="1463505486582" duration="10269000" />
-      <workItem from="1463534065796" duration="131000" />
+      <workItem from="1463534065796" duration="2182000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19905000" />
+    <option name="totallyTimeSpent" value="21956000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3232" height="1732" extended-state="6" />
@@ -882,12 +879,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Chp7.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1104">
-          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-          <folding>
-            <element signature="e#358#359#0" expanded="true" />
-            <element signature="e#393#394#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="823">
+          <caret line="70" column="17" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
