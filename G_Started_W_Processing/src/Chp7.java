@@ -25,18 +25,29 @@ public class Chp7 extends PApplet {
 //    float step = 0.01f;
 //    float pct = 0.1f;
 
-    float speed = 2.5f;
-    int diameter = 20;
-    float x;
-    float y;
+//    float speed = 2.5f;
+//    int diameter = 20;
+//    float x;
+//    float y;
 
+//    int time1 = 2000;
+//    int time2 = 4000;
+//    float x = 0;
+
+//    float angle = 0.0f;
+//    float offset = 60;
+//    float scalar = 40;
+//    float speed = 0.5f;
+
+    float angle = 0.0f;
+    float offset = 60;
+    float scalar = 2;
+    float speed = 0.05f;
 
     public void settings(){
         super.settings();
         size(400,300);
         smooth();
-        x = width/2;
-        y = height/2;
     }
 
     public void setup(){
@@ -86,10 +97,48 @@ public class Chp7 extends PApplet {
 //            line(x + offsetA,20,x - offsetB,100);
 //        }
 
-        x += random(-speed,speed);
-        y += random(-speed,speed);
-        x = constrain(x,0,width);
-        y = constrain(y,0,height);
-        ellipse(x,y,diameter,diameter);
+//        x += random(-speed,speed);
+//        y += random(-speed,speed);
+//        x = constrain(x,0,width);
+//        y = constrain(y,0,height);
+//        ellipse(x,y,diameter,diameter);
+
+//        int timer = millis();
+//        println(timer);
+
+//        int currentTime = millis();
+//        background(204);
+//        if (currentTime > time2) {
+//            x -= 0.5;
+//        } else if (currentTime > time1) {
+//            x += 2;
+//        }
+//        ellipse(x,60,90,90);
+
+//        float sinval = sin(angle);
+//        println(sinval);
+//        float gray = map(sinval,-1,1,0,255);
+//        background(gray);
+//        angle += 0.1;
+
+//        background(0);
+//        float y1 = offset + sin(angle) * scalar;
+//        float y2 = offset + sin(angle + 0.4f) * scalar;
+//        float y3 = offset + sin(angle + 0.8f) * scalar;
+//        ellipse(80,y1,40,40);
+//        ellipse(120,y2,40,40);
+//        ellipse(160,y3,40,40);
+//        angle += speed;
+
+//        float x = offset + cos(angle) * scalar;
+//        float y = offset + sin(angle) * scalar;
+//        ellipse(x,y,40,40);
+//        angle += speed;
+
+//        float x = offset + cos(angle) * scalar;
+//        float y = offset + sin(angle) * scalar;
+//        ellipse(x,y,2,2);
+//        angle += speed;
+//        scalar += speed;
     }
 }
