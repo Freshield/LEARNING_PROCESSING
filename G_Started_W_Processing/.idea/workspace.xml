@@ -36,7 +36,7 @@
       <file leaf-file-name="Chp4.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Chp4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
+            <state relative-caret-position="3984">
               <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="128" selection-end-column="31" />
               <folding />
             </state>
@@ -46,20 +46,33 @@
       <file leaf-file-name="Chp5.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Chp5.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
+            <state relative-caret-position="1200">
               <caret line="25" column="5" selection-start-line="20" selection-start-column="0" selection-end-line="25" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Chp6.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Chp6.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Chp6.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="751">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="960">
+              <caret line="35" column="5" selection-start-line="29" selection-start-column="4" selection-end-line="35" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Chp7.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Chp7.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1104">
+              <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+              <folding>
+                <element signature="e#358#359#0" expanded="true" />
+                <element signature="e#393#394#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,6 +99,7 @@
         <option value="$PROJECT_DIR$/src/Chp4.java" />
         <option value="$PROJECT_DIR$/src/Chp5.java" />
         <option value="$PROJECT_DIR$/src/Chp6.java" />
+        <option value="$PROJECT_DIR$/src/Chp7.java" />
       </list>
     </option>
   </component>
@@ -126,6 +140,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -160,9 +177,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -175,7 +189,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.Chp6">
+  <component name="RunManager" selected="Application.Chp7">
     <configuration default="false" name="Chp3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Chp3" />
@@ -224,6 +238,21 @@
     <configuration default="false" name="Chp6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Chp6" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="G_Started_W_Processing" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Chp7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="Chp7" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -637,18 +666,20 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Chp3" />
       <item index="1" class="java.lang.String" itemvalue="Application.Chp4" />
       <item index="2" class="java.lang.String" itemvalue="Application.Chp5" />
       <item index="3" class="java.lang.String" itemvalue="Application.Chp6" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Chp7" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Application.Chp6" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Chp5" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Chp4" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Chp3" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.Chp7" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Chp6" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Chp5" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Chp4" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Chp3" />
       </list>
     </recent_temporary>
   </component>
@@ -668,12 +699,13 @@
       <workItem from="1463429667346" duration="1555000" />
       <workItem from="1463439922241" duration="6480000" />
       <workItem from="1463450853837" duration="1470000" />
-      <workItem from="1463505486582" duration="10237000" />
+      <workItem from="1463505486582" duration="10269000" />
+      <workItem from="1463534065796" duration="131000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19742000" />
+    <option name="totallyTimeSpent" value="19905000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3232" height="1732" extended-state="6" />
@@ -726,6 +758,40 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Chp3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1056">
+          <caret line="22" column="5" selection-start-line="6" selection-start-column="0" selection-end-line="22" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Chp4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3984">
+          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="128" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Chp5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="25" column="5" selection-start-line="20" selection-start-column="0" selection-end-line="25" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Chp6.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Chp3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5520">
@@ -790,7 +856,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Chp4.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
+        <state relative-caret-position="3984">
           <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="128" selection-end-column="31" />
           <folding />
         </state>
@@ -798,7 +864,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Chp5.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
+        <state relative-caret-position="1200">
           <caret line="25" column="5" selection-start-line="20" selection-start-column="0" selection-end-line="25" selection-end-column="5" />
           <folding />
         </state>
@@ -806,10 +872,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Chp6.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="751">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="960">
+          <caret line="35" column="5" selection-start-line="29" selection-start-column="4" selection-end-line="35" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Chp7.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1104">
+          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+          <folding>
+            <element signature="e#358#359#0" expanded="true" />
+            <element signature="e#393#394#0" expanded="true" />
           </folding>
         </state>
       </provider>
