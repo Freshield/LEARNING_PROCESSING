@@ -1,4 +1,6 @@
 import processing.core.PApplet;
+import processing.core.PImage;
+import processing.core.PShape;
 
 /**
  * Created by FRESHIELD on 2016/5/18.
@@ -22,6 +24,12 @@ public class Chp10 extends PApplet {
 //    int y[] = new int[num];
 
 //    JitterBug[] bugs = new JitterBug[50];
+
+    int numFrames = 12;
+    PImage[] images = new PImage[numFrames];
+    int currentFrame = 1;
+
+    Robot[] bots;
 
 
     public void settings() {
@@ -60,6 +68,21 @@ public class Chp10 extends PApplet {
 //            int r = i + 2;
 //            bugs[i] = new JitterBug(x,y,r);
 //        }
+
+//        for (int i = 0; i < images.length; i ++) {
+//            String imageName = "frame-" + nf(i,4) + ".png";
+//            images[i] = loadImage(imageName);
+//        }
+//        frameRate(24);
+
+        PShape robotShape = loadShape("robot1.svg");
+        bots = new Robot[20];
+
+        for (int i = 0; i < bots.length; i++) {
+            float x = random(-40, width-40);
+            float y = map(i,0,bots.length,-100,height-200);
+            bots[i] = new Robot(robotShape,x,y);
+        }
     }
 
     public void draw() {
@@ -94,9 +117,22 @@ public class Chp10 extends PApplet {
 //            ellipse(x[i],y[i],40,40);
 //        }
 
-        for (int i = 0; i < bugs.length; i++) {
-            bugs[i].move();
-            bugs[i].display();
+//        for (int i = 0; i < bugs.length; i++) {
+//            bugs[i].move();
+//            bugs[i].display();
+//        }
+//        println(currentFrame);
+//        image(images[currentFrame],0,0);
+//        currentFrame++;
+//        if (currentFrame >= images.length) {
+//            currentFrame = 0;
+//        }
+
+        background(204);
+
+        for (int i = 0; i < bots.length; i++) {
+            bots[i].update();
+            bots[i].display();
         }
 
 
@@ -123,6 +159,34 @@ public class Chp10 extends PApplet {
             ellipse(x,y,diameter,diameter);
         }
     }
+
+
+    public class Robot {
+
+        float xpos;
+        float ypos;
+        float angle;
+        PShape botShape;
+        float yoffset = 0.0f;
+
+        Robot (PShape shape, float tempX, float tempY) {
+            botShape = shape;
+            xpos = tempX;
+            ypos = tempY;
+            angle = random(0,TWO_PI);
+        }
+
+        void update() {
+            angle += 0.05f;
+            yoffset = sin(angle) * 20;
+        }
+
+        void display() {
+            shape(botShape,xpos,ypos+yoffset);
+        }
+
+    }
+
 
 }
 
