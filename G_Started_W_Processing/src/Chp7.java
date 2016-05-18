@@ -16,19 +16,27 @@ public class Chp7 extends PApplet {
 //    float speed = 1;
 //    int direction = 1;
 
-    int startX = 20;
-    int stopX = 160;
-    int startY = 30;
-    int stopY = 80;
-    float x = startX;
-    float y = startY;
-    float step = 0.01f;
-    float pct = 0.1f;
+//    int startX = 20;
+//    int stopX = 160;
+//    int startY = 30;
+//    int stopY = 80;
+//    float x = startX;
+//    float y = startY;
+//    float step = 0.01f;
+//    float pct = 0.1f;
+
+    float speed = 2.5f;
+    int diameter = 20;
+    float x;
+    float y;
+
 
     public void settings(){
         super.settings();
         size(400,300);
         smooth();
+        x = width/2;
+        y = height/2;
     }
 
     public void setup(){
@@ -67,7 +75,21 @@ public class Chp7 extends PApplet {
 //        }
 //        ellipse(x,y,20,20);
 
-        float r = random(0,mouseX);
-        println(r);
+//        float r = random(0,mouseX);
+//        println(r);
+
+//        background(204);
+//        for (int x = 20;x < width; x += 20) {
+//            float mx = mouseX / 100;
+//            float offsetA = random(-mx,mx);
+//            float offsetB = random(-mx,mx);
+//            line(x + offsetA,20,x - offsetB,100);
+//        }
+
+        x += random(-speed,speed);
+        y += random(-speed,speed);
+        x = constrain(x,0,width);
+        y = constrain(y,0,height);
+        ellipse(x,y,diameter,diameter);
     }
 }
