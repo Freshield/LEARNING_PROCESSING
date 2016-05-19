@@ -8,6 +8,7 @@
       <root url="jar://$PROJECT_DIR$/../try_IntelliJ/jogl-all-natives-windows-amd64.jar!/" />
       <root url="jar://$PROJECT_DIR$/../try_IntelliJ/jogl-all-natives-windows-i586.jar!/" />
       <root url="jar://$PROJECT_DIR$/../try_IntelliJ/jogl-all.jar!/" />
+      <root url="jar://$PROJECT_DIR$/library/processing-master/processing-master/java/libraries/pdf/library/itext.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

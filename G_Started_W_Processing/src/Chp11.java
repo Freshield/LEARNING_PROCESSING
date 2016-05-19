@@ -1,6 +1,6 @@
 import processing.core.PApplet;
 import processing.opengl.*;
-import 
+import processing.pdf.*;
 
 /**
  * Created by FRESHIELD on 2016/5/18.
@@ -17,7 +17,7 @@ public class Chp11 extends PApplet {
     public void settings() {
         super.settings();
 //        size(420, 220,OPENGL);
-        size(720,600);
+        size(720,600,PDF,"Ex-11-5.pdf");
         smooth();
 
 
@@ -26,9 +26,11 @@ public class Chp11 extends PApplet {
     public void setup() {
 //        noStroke();
 //        fill(255);
+//        noFill();
+//        strokeCap(SQUARE);
+//        frameRate(30);
         noFill();
         strokeCap(SQUARE);
-        frameRate(30);
     }
 
     public void draw() {
@@ -88,19 +90,31 @@ public class Chp11 extends PApplet {
 //        }
 
 
-        background(204);
-        translate(x,0);
-        for (int y = 40; y < 280; y += 20) {
-            line(-260,y,0,y + 200);
-            line(0, y + 200, 260, y);
-        }
-        if (frameCount < 60) {
-            saveFrame("frame/SaveExample-####.png");
-        } else {
-            exit();
-        }
+//        background(204);
+//        translate(x,0);
+//        for (int y = 40; y < 280; y += 20) {
+//            line(-260,y,0,y + 200);
+//            line(0, y + 200, 260, y);
+//        }
+//        if (frameCount < 60) {
+//            saveFrame("frame/SaveExample-####.png");
+//        } else {
+//            exit();
+//        }
+//
+//        x += 2.5;
 
-        x += 2.5;
+        background(255);
+        for (int y = 100; y < height - 300; y += 20) {
+            float r = random(0,102);
+            strokeWeight(r / 10);
+            beginShape();
+            vertex(100,y);
+            vertex(width/2, y + 200);
+            vertex(width - 100, y);
+            endShape();
+        }
+        exit();
 
     }
 

@@ -3,8 +3,7 @@
     <CLASSES />
     <JAVADOC />
     <SOURCES>
-      <root url="file://$PROJECT_DIR$/library" />
-      <root url="file://$PROJECT_DIR$/library/processing-master/processing-master/java/libraries/pdf/src" />
+      <root url="file://$PROJECT_DIR$" />
     </SOURCES>
   </library>
 </component>
