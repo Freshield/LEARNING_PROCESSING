@@ -6,19 +6,46 @@ public class GalaxyCoordinator {
 
 
     PApplet parent;
+    float translateX;
+    float translateY;
+    float translateZ;
+    float gradeX;
+    float gradeY;
+    float gradeZ;
+    int numberOfCircles;
+    float interval;
+    int colorR;
+    int colorG;
+    int colorB;
+    int transparent;
+    float start;
 
-    public GalaxyCoordinator(PApplet _parent) {
+    public GalaxyCoordinator(PApplet _parent,float _translateX,float _translateY,float _translateZ,
+                             float _gradeX, float _gradeY, float _gradeZ,
+                             int _numberOfCircles, float _interval,
+                             int _colorR, int _colorG, int _colorB,
+                             int _transparent, float _start) {
 
         parent = _parent;
+        translateX = _translateX;
+        translateY = _translateY;
+        translateZ = _translateZ;
+        gradeX = _gradeX;
+        gradeY = _gradeY;
+        gradeZ = _gradeZ;
+        numberOfCircles = _numberOfCircles;
+        interval = _interval;
+        colorR = _colorR;
+        colorG = _colorG;
+        colorB = _colorB;
+        transparent = _transparent;
+        start = _start;
+
     }
 
 
 
-    public void draw(float translateX,float translateY,float translateZ,
-                                  float gradeX, float gradeY, float gradeZ,
-                                  int numberOfCircles, float interval,
-                                  int colorR, int colorG, int colorB,
-                                  int transparent, float start, boolean testing){
+    public void draw(boolean testing){
 
 
         parent.pushMatrix();
