@@ -5,10 +5,10 @@ import processing.core.PApplet;
 public class GalaxyCoordinator {
 
 
-    int w, h;
     PApplet parent;
 
     public GalaxyCoordinator(PApplet _parent) {
+
         parent = _parent;
     }
 

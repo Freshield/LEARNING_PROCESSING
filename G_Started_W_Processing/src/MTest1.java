@@ -24,7 +24,7 @@ public class MTest1 extends PApplet {
     float speed1 = 0.03f;
     float speed0 = 0.02f;
     float speed2 = 0.02f;
-    GalaxyCoordinator GG ;
+    GalaxyCoordinator galaxy ;
 
 
     public void settings() {
@@ -35,7 +35,7 @@ public class MTest1 extends PApplet {
     }
 
     public void setup(){
-        GG = new GalaxyCoordinator(this);
+        galaxy = new GalaxyCoordinator(this);
 
 
     }
@@ -54,7 +54,7 @@ public class MTest1 extends PApplet {
 
 
 
-        GG.draw(400,400,-100,60,30,0,24,300,255,255,255,100,true);
+        galaxy.draw(400,400,-100,60,30,0,24,300,255,255,255,100,true);
 
         translate(400,400,-100);
         rotateX(PI/3);
