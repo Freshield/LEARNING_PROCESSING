@@ -17,9 +17,9 @@ public class MTest1 extends PApplet {
     float angle2 = 0.0f;
     float offset = 0;
     float scalar = 300;
-    float scalar1 = 600;
+    float scalar1 = 450;
     float scalar0 = 2;
-    float scalar2 = 900;
+    float scalar2 = 600;
     float speed = 0.01f;
     float speed1 = 0.03f;
     float speed0 = 0.02f;
@@ -54,7 +54,7 @@ public class MTest1 extends PApplet {
 
 
 
-        galaxy.draw(400,400,-100,60,30,0,24,300,255,255,255,100,true);
+        galaxy.draw(400,400,-100,60,30,0,24,150,255,255,255,100,300,true);
 
         translate(400,400,-100);
         rotateX(PI/3);

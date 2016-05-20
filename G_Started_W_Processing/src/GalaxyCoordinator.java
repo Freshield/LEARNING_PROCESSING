@@ -18,7 +18,7 @@ public class GalaxyCoordinator {
                                   float gradeX, float gradeY, float gradeZ,
                                   int numberOfCircles, float interval,
                                   int colorR, int colorG, int colorB,
-                                  int transparent, boolean testing){
+                                  int transparent, float start, boolean testing){
 
 
         parent.pushMatrix();
@@ -29,11 +29,11 @@ public class GalaxyCoordinator {
         parent.rotateY(parent.radians(gradeY));
         parent.rotateZ(parent.radians(gradeZ));
 
-        float radius = interval;
+        float radius = start;
         parent.noFill();
         parent.stroke(colorR,colorG,colorB,transparent);
         for (int i = 0; i < numberOfCircles; i++) {
-            parent.ellipse(0,0,radius,radius);
+            parent.ellipse(0,0,radius*2,radius*2);
             radius += interval;
         }
 

@@ -83,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MTest1.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MTest1.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MTest1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="48" column="47" selection-start-line="46" selection-start-column="0" selection-end-line="48" selection-end-column="47" />
+            <state relative-caret-position="816">
+              <caret line="56" column="68" selection-start-line="56" selection-start-column="68" selection-end-line="56" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,11 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Stars.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Stars.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Stars.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="-240">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -110,8 +110,8 @@
       <file leaf-file-name="GalaxyCoordinator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GalaxyCoordinator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+            <state relative-caret-position="624">
+              <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -146,9 +146,9 @@
         <option value="$PROJECT_DIR$/src/Chp11.java" />
         <option value="$PROJECT_DIR$/../try_IntelliJ/core.jar!/processing/data/FloatDict.class" />
         <option value="$PROJECT_DIR$/src/MyBox.java" />
-        <option value="$PROJECT_DIR$/src/MTest1.java" />
-        <option value="$PROJECT_DIR$/src/GalaxyCoordinator.java" />
         <option value="$PROJECT_DIR$/src/Stars.java" />
+        <option value="$PROJECT_DIR$/src/GalaxyCoordinator.java" />
+        <option value="$PROJECT_DIR$/src/MTest1.java" />
       </list>
     </option>
   </component>
@@ -799,12 +799,12 @@
       <workItem from="1463618962264" duration="185000" />
       <workItem from="1463619182397" duration="4080000" />
       <workItem from="1463681281469" duration="89000" />
-      <workItem from="1463696527315" duration="6608000" />
+      <workItem from="1463696527315" duration="8113000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54199000" />
+    <option name="totallyTimeSpent" value="55704000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3232" height="1732" extended-state="6" />
@@ -1227,28 +1227,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GalaxyCoordinator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+        <state relative-caret-position="624">
+          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MTest1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="48" column="47" selection-start-line="46" selection-start-column="0" selection-end-line="48" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Stars.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="-240">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MTest1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="56" column="68" selection-start-line="56" selection-start-column="68" selection-end-line="56" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

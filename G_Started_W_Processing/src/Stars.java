@@ -2,6 +2,7 @@
  * Created by FRESHIELD on 2016/5/19.
  */
 import processing.core.PApplet;
+
 public class Stars {
 
     PApplet parent;
@@ -29,6 +30,7 @@ public class Stars {
 
 
         parent.rotateZ(_angle);
+        parent.translate(x,y,0);
         parent.fill(fillColorR,fillColorG,fillColorB);
         parent.stroke(strokeColorR,strokeColorG,strokeColorB);
         parent.sphere(size);
