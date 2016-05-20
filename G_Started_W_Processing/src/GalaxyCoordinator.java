@@ -4,7 +4,6 @@ import processing.core.PApplet;
  */
 public class GalaxyCoordinator {
 
-
     PApplet parent;
     float translateX;
     float translateY;
@@ -43,13 +42,9 @@ public class GalaxyCoordinator {
 
     }
 
-
-
     public void draw(boolean testing){
 
-
         parent.pushMatrix();
-
 
         parent.translate(translateX,translateY,translateZ);
         parent.rotateX(parent.radians(gradeX));
@@ -74,9 +69,6 @@ public class GalaxyCoordinator {
         }
 
         parent.popMatrix();
-
-
-
 
     }
 

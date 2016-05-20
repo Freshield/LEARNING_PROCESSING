@@ -57,19 +57,14 @@ public class Stars {
 
         parent.pushMatrix();
 
-
         float x = parent.cos(revolutionAngle) * radiux;
         float y = parent.sin(revolutionAngle) * radiux;
-
 
         parent.translate(translateX,translateY,translateZ);
         parent.rotateX(parent.radians(gradeX));
         parent.rotateY(parent.radians(gradeY));
         parent.rotateZ(parent.radians(gradeZ));
 
-
-
-//        parent.rotateZ(rotationAngle);
         parent.translate(x,y,0);
         parent.rotateX(parent.radians(90));
         parent.rotateY(rotationAngle);

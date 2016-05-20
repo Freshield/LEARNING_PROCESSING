@@ -11,21 +11,12 @@ public class MTest1 extends PApplet {
         PApplet.main("MTest1");
     }
 
-    float angle = 0.0f;
-    float angle1 = 0.0f;
-    float angle0 = 0.0f;
-    float angle2 = 0.0f;
-    float offset = 0;
-    float scalar = 300;
-    float scalar1 = 450;
-    float scalar0 = 2;
-    float scalar2 = 600;
-    float speed = 0.01f;
-    float speed1 = 0.03f;
-    float speed0 = 0.02f;
-    float speed2 = 0.02f;
     GalaxyCoordinator galaxy;
-    Stars star;
+    Stars star1;
+    Stars star2;
+    Stars star3;
+    Stars star4;
+    Stars star5;
 
     float gTranslateX = 400;
     float gTranslateY = 400;
@@ -52,7 +43,12 @@ public class MTest1 extends PApplet {
     public void setup(){
 
         galaxy = new GalaxyCoordinator(this,gTranslateX, gTranslateY,gTranslateZ,gGradeX,gGradeY,gGradeZ,gNumberOfCircles,gInterval,gColorR,gColorG,gColorB,gTransparent,gStart);
-        star = new Stars(this,gTranslateX,gTranslateY,gTranslateZ,gGradeX,gGradeY,gGradeZ,255,255,255,46,169,223,66,3*gInterval+gStart,0,0.01f,0,0.03f);
+
+        star1 = new Stars(this,gTranslateX,gTranslateY,gTranslateZ,gGradeX,gGradeY,gGradeZ,255,255,255,255,0,0,86,0,0,0,0,0.02f);
+        star2 = new Stars(this,gTranslateX,gTranslateY,gTranslateZ,gGradeX,gGradeY,gGradeZ,255,255,255,0,0,255,38,0*gInterval+gStart,0,0.01f,0,0.02f);
+        star3 = new Stars(this,gTranslateX,gTranslateY,gTranslateZ,gGradeX,gGradeY,gGradeZ,255,255,255,0,255,255,18,1*gInterval+gStart,0,0.03f,0,0.03f);
+        star4 = new Stars(this,gTranslateX,gTranslateY,gTranslateZ,gGradeX,gGradeY,gGradeZ,255,255,255,40,255,45,28,2*gInterval+gStart,0,0.02f,0,0.02f);
+        star5 = new Stars(this,gTranslateX,gTranslateY,gTranslateZ,gGradeX,gGradeY,gGradeZ,255,255,255,46,169,223,48,3*gInterval+gStart,0,0.015f,0,0.02f);
 
 
     }
@@ -62,104 +58,13 @@ public class MTest1 extends PApplet {
         background(0);
         lights();
 
-        float x = offset + cos(angle) * scalar;
-        float y = offset + sin(angle) * scalar;
-        float x1 = offset + cos(angle1) * scalar1;
-        float y1 = offset + sin(angle1) * scalar1;
-        float x2 = offset + cos(angle2) * scalar2;
-        float y2 = offset + sin(angle2) * scalar2;
-
-
-
         galaxy.draw(true);
 
-        star.draw();
-
-//        rotateZ(PI/6);
-//        noFill();
-//        stroke(255);
-//        ellipse(0,0,scalar*2,scalar*2);
-//        ellipse(0,0,scalar1*2,scalar1*2);
-//        ellipse(0,0,scalar2*2,scalar2*2);
-//        stroke(255,0,0);
-//        line(0,0,0,600,0,0);
-//        stroke(0,255,0);
-//        line(0,0,0,0,600,0);
-//        stroke(0,0,255);
-//        line(0,0,0,0,0,600);
-
-        pushMatrix();
-
-
-        translate(400,400,-100);
-        rotateX(PI/3);
-        rotateY(PI/6);
-
-        rotateX(radians(90));
-        rotateY(angle0);
-        fill(255);
-        stroke(255,0,0);
-        sphere(88);
-        rotateX(radians(-90));
-
-
-
-//
-//        stroke(255,0,0);
-//        line(0,0,0,300,0,0);
-//        stroke(0,255,0);
-//        line(0,0,0,0,300,0);
-//        stroke(0,0,255);
-//        line(0,0,0,0,0,300);
-
-        popMatrix();
-
-
-        translate(400,400,-100);
-        rotateX(PI/3);
-        rotateY(PI/6);
-
-        pushMatrix();
-        translate(x,y,0);
-        rotateX(radians(90));
-        rotateY(angle0);
-        fill(255);
-        stroke(0,0,255);
-        sphere(38);
-        rotateX(radians(-90));
-//        stroke(255,0,0);
-//        line(0,0,0,300,0,0);
-//        stroke(0,255,0);
-//        line(0,0,0,0,300,0);
-//        stroke(0,0,255);
-//        line(0,0,0,0,0,300);
-        popMatrix();
-
-        pushMatrix();
-        translate(x1,y1,0);
-        rotateX(radians(90));
-        rotateY(angle0);
-        fill(255);
-        stroke(0,255,255);
-        sphere(18);
-        rotateX(radians(-90));
-        popMatrix();
-
-        pushMatrix();
-        translate(x2,y2,0);
-        rotateX(radians(90));
-        rotateY(angle0);
-        fill(255);
-        stroke(40,255,45);
-        sphere(28);
-        rotateX(radians(-90));
-        popMatrix();
-
-        angle += speed;
-        angle1 += speed1;
-        angle0 += speed0;
-        angle2 += speed2;
-
+        star1.draw();
+        star2.draw();
+        star3.draw();
+        star4.draw();
+        star5.draw();
 
 
     }
