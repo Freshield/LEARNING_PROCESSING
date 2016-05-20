@@ -17,23 +17,25 @@ public class MTest1 extends PApplet {
     float angle2 = 0.0f;
     float offset = 0;
     float scalar = 300;
-    float scalar1 = 500;
+    float scalar1 = 600;
     float scalar0 = 2;
-    float scalar2 = 650;
+    float scalar2 = 900;
     float speed = 0.01f;
     float speed1 = 0.03f;
-    float speed0 = 0.005f;
+    float speed0 = 0.02f;
     float speed2 = 0.02f;
+    GalaxyCoordinator GG ;
 
 
     public void settings() {
         super.settings();
-        size(1000, 1000, OPENGL);
+
+        size(1000, 1000, P3D);
         smooth();
     }
 
     public void setup(){
-
+        GG = new GalaxyCoordinator(this);
 
 
     }
@@ -50,13 +52,25 @@ public class MTest1 extends PApplet {
         float x2 = offset + cos(angle2) * scalar2;
         float y2 = offset + sin(angle2) * scalar2;
 
-        translate(500,500,-100);
+
+
+        GG.draw(400,400,-100,60,30,0,24,300,255,255,255,100,true);
+
+        translate(400,400,-100);
         rotateX(PI/3);
-        noFill();
-        stroke(255);
-        ellipse(0,0,scalar*2,scalar*2);
-        ellipse(0,0,scalar1*2,scalar1*2);
-        ellipse(0,0,scalar2*2,scalar2*2);
+        rotateY(PI/6);
+//        rotateZ(PI/6);
+//        noFill();
+//        stroke(255);
+//        ellipse(0,0,scalar*2,scalar*2);
+//        ellipse(0,0,scalar1*2,scalar1*2);
+//        ellipse(0,0,scalar2*2,scalar2*2);
+//        stroke(255,0,0);
+//        line(0,0,0,600,0,0);
+//        stroke(0,255,0);
+//        line(0,0,0,0,600,0);
+//        stroke(0,0,255);
+//        line(0,0,0,0,0,600);
 
         pushMatrix();
         rotateZ(angle0);
@@ -67,6 +81,7 @@ public class MTest1 extends PApplet {
 
         pushMatrix();
         translate(x,y,0);
+        rotateZ(angle0);
         fill(255);
         stroke(0,0,255);
         sphere(38);
@@ -74,6 +89,7 @@ public class MTest1 extends PApplet {
 
         pushMatrix();
         translate(x1,y1,0);
+        rotateZ(angle0);
         fill(255);
         stroke(0,255,255);
         sphere(18);
@@ -81,6 +97,7 @@ public class MTest1 extends PApplet {
 
         pushMatrix();
         translate(x2,y2,0);
+        rotateZ(angle0);
         fill(255);
         stroke(40,255,45);
         sphere(28);
