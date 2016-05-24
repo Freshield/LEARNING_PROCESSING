@@ -1,4 +1,5 @@
 import processing.core.*;
+import processing.event.MouseEvent;
 import processing.opengl.*;
 
 /**
@@ -31,6 +32,9 @@ public class MTest1 extends PApplet {
     int gColorB = 255;
     int gTransparent = 100;
     float gStart = 300;
+    int dragValue = 0;
+    float scalar = 1;
+    int focusNumber = 1;
 
 
     public void settings() {
@@ -58,7 +62,23 @@ public class MTest1 extends PApplet {
         background(0);
         lights();
 
-        galaxy.draw(true);
+        translate(gTranslateX,gTranslateY,gTranslateZ);
+        rotateX(radians(gGradeX));
+        rotateY(radians(gGradeY));
+        rotateZ(radians(gGradeZ));
+
+        scale(scalar);
+
+        focusStars(2);
+
+
+
+
+        rotateZ(radians(dragValue));
+
+
+
+        galaxy.draw(false);
 
         star1.draw();
         star2.draw();
@@ -67,5 +87,59 @@ public class MTest1 extends PApplet {
         star5.draw();
 
 
+
+    }
+
+    public void mouseClicked() {
+        focusNumber ++;
+        if (focusNumber > 5) {
+            focusNumber = 1;
+        }
+    }
+
+    public void focusStars(int number) {
+        switch (number) {
+            case 1:
+                translate(-star1.getStarPositionX(),-star1.getStarPositionY(),0);
+                break;
+            case 2:
+                translate(-star2.getStarPositionX(),-star2.getStarPositionY(),0);
+
+                break;
+            case 3:
+                translate(-star3.getStarPositionX(),-star3.getStarPositionY(),0);
+                break;
+            case 4:
+                translate(-star4.getStarPositionX(),-star4.getStarPositionY(),0);
+                break;
+            case 5:
+                translate(-star5.getStarPositionX(),-star5.getStarPositionY(),0);
+                break;
+            default:
+                translate(-star1.getStarPositionX(),-star1.getStarPositionY(),0);
+                break;
+        }
+    }
+
+
+    public void mouseDragged() {
+        if (pmouseX > mouseX) {
+            dragValue = dragValue - 1;
+        } else if (pmouseX < mouseX){
+            dragValue = dragValue + 1;
+        }
+
+    }
+
+    public void mouseWheel(MouseEvent event) {
+        float e = event.getCount();
+        println(e);
+        if (e < 0) {
+            scalar += 0.1;
+        } else if (e > 0){
+            if (scalar > 0.1) {
+                scalar -= 0.1;
+            }
+        }
     }
 }

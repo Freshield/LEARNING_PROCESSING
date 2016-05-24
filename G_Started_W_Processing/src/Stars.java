@@ -25,6 +25,9 @@ public class Stars {
     float rotationAngle;
     float rotationSpeed;
 
+    float starPositionX;
+    float starPositionY;
+
     public Stars(PApplet _parent,float _translateX,float _translateY,float _translateZ,
                  float _gradeX, float _gradeY, float _gradeZ,
                  int _fillColorR, int _fillColorG, int _fillColorB,
@@ -57,15 +60,16 @@ public class Stars {
 
         parent.pushMatrix();
 
-        float x = parent.cos(revolutionAngle) * radiux;
-        float y = parent.sin(revolutionAngle) * radiux;
+        starPositionX = parent.cos(revolutionAngle) * radiux;
+        starPositionY = parent.sin(revolutionAngle) * radiux;
 
-        parent.translate(translateX,translateY,translateZ);
-        parent.rotateX(parent.radians(gradeX));
-        parent.rotateY(parent.radians(gradeY));
-        parent.rotateZ(parent.radians(gradeZ));
 
-        parent.translate(x,y,0);
+//        parent.translate(translateX,translateY,translateZ);
+//        parent.rotateX(parent.radians(gradeX));
+//        parent.rotateY(parent.radians(gradeY));
+//        parent.rotateZ(parent.radians(gradeZ));
+
+        parent.translate(starPositionX,starPositionY,0);
         parent.rotateX(parent.radians(90));
         parent.rotateY(rotationAngle);
 
@@ -79,8 +83,14 @@ public class Stars {
         revolutionAngle += revolutionSpeed;
         rotationAngle += rotationSpeed;
 
+    }
 
+    public float getStarPositionX() {
+        return parent.cos(revolutionAngle) * radiux;
+    }
 
+    public float getStarPositionY() {
+        return parent.sin(revolutionAngle) * radiux;
     }
 
 }

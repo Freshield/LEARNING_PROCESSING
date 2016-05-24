@@ -46,10 +46,10 @@ public class GalaxyCoordinator {
 
         parent.pushMatrix();
 
-        parent.translate(translateX,translateY,translateZ);
-        parent.rotateX(parent.radians(gradeX));
-        parent.rotateY(parent.radians(gradeY));
-        parent.rotateZ(parent.radians(gradeZ));
+//        parent.translate(translateX,translateY,translateZ);
+//        parent.rotateX(parent.radians(gradeX));
+//        parent.rotateY(parent.radians(gradeY));
+//        parent.rotateZ(parent.radians(gradeZ));
 
         float radius = start;
         parent.noFill();
