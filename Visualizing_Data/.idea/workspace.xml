@@ -39,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/src/Test_mouseDrag.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="861">
-              <caret line="35" column="0" selection-start-line="2" selection-start-column="3" selection-end-line="35" selection-end-column="0" />
+              <caret line="35" column="0" selection-start-line="5" selection-start-column="28" selection-end-line="35" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -72,15 +72,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test_coordiantor.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Test_coordiantor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Test_coordiantor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4272">
-              <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+            <state relative-caret-position="48">
+              <caret line="58" column="2" selection-start-line="5" selection-start-column="29" selection-end-line="58" selection-end-column="2" />
               <folding>
                 <element signature="e#358#359#0" expanded="true" />
                 <element signature="e#382#383#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test_circle.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Test_circle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -107,6 +117,7 @@
         <option value="$PROJECT_DIR$/src/Test_mouseWheel.java" />
         <option value="$PROJECT_DIR$/src/Test_matrix.java" />
         <option value="$PROJECT_DIR$/src/Test_coordiantor.java" />
+        <option value="$PROJECT_DIR$/src/Test_circle.java" />
       </list>
     </option>
   </component>
@@ -196,22 +207,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.Test_coordiantor">
-    <configuration default="false" name="Test_Camera" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Test_Camera" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Visualizing_Data" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.Test_circle">
     <configuration default="false" name="Test_mouseDrag" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Test_mouseDrag" />
@@ -260,6 +256,21 @@
     <configuration default="false" name="Test_coordiantor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Test_coordiantor" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Visualizing_Data" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Test_circle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="Test_circle" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -674,19 +685,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Test_Camera" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Test_mouseDrag" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Test_mouseWheel" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Test_matrix" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Test_coordiantor" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Test_mouseDrag" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Test_mouseWheel" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Test_matrix" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Test_coordiantor" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Test_circle" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Test_coordiantor" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Test_matrix" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Test_mouseWheel" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Test_mouseDrag" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Test_Camera" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Test_circle" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Test_coordiantor" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Test_matrix" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Test_mouseWheel" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Test_mouseDrag" />
       </list>
     </recent_temporary>
   </component>
@@ -704,12 +715,12 @@
       <option name="presentableId" value="Default" />
       <updated>1463874163356</updated>
       <workItem from="1463874166525" duration="1928000" />
-      <workItem from="1464104858120" duration="7326000" />
+      <workItem from="1464104858120" duration="7808000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9254000" />
+    <option name="totallyTimeSpent" value="9736000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3232" height="1732" extended-state="6" />
@@ -793,16 +804,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test_mouseDrag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="861">
-          <caret line="35" column="0" selection-start-line="2" selection-start-column="3" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_matrix.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="861">
@@ -815,12 +816,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test_coordiantor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4272">
-          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+        <state relative-caret-position="48">
+          <caret line="58" column="2" selection-start-line="5" selection-start-column="29" selection-end-line="58" selection-end-column="2" />
           <folding>
             <element signature="e#358#359#0" expanded="true" />
             <element signature="e#382#383#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_mouseDrag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="861">
+          <caret line="35" column="0" selection-start-line="5" selection-start-column="28" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_circle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>

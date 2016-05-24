@@ -82,14 +82,17 @@ public class Stars {
         parent.sphere(size);
 
         parent.rotateX(parent.radians(-90));
+
+
+        starModelX = parent.modelX(0,0,0);
+        starModelY = parent.modelY(0,0,0);
+        starModelZ = parent.modelZ(0,0,0);
+
         parent.popMatrix();
 
         revolutionAngle += revolutionSpeed;
         rotationAngle += rotationSpeed;
 
-        starModelX = parent.modelX(0,0,0);
-        starModelY = parent.modelY(0,0,0);
-        starModelZ = parent.modelZ(0,0,0);
 
     }
 

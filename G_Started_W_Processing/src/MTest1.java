@@ -21,7 +21,7 @@ public class MTest1 extends PApplet {
 
     float gTranslateX = 400;
     float gTranslateY = 400;
-    float gTranslateZ = -100;
+    float gTranslateZ = 0;
     float gGradeX = 60;
     float gGradeY = 30;
     float gGradeZ = 0;
@@ -36,7 +36,7 @@ public class MTest1 extends PApplet {
     float scalar = 1;
     int focusNumber = 1;
 
-    backgroundStar[] backStars = new backgroundStar[50];
+    backgroundStar[] backStars = new backgroundStar[30];
 
 
     public void settings() {
@@ -88,7 +88,14 @@ public class MTest1 extends PApplet {
         stroke(0,0,255);
         line(0,0,0,0,0,500);
 
+
+
         scale(scalar);
+        pushMatrix();
+        rotateY(radians(90));
+        rotateX(radians(90));
+        ellipse(0,0,88,88);
+        popMatrix();
 
         focusStars(focusNumber);
 
@@ -125,6 +132,7 @@ public class MTest1 extends PApplet {
         popMatrix();
 
 
+        println(star1.starModelX+" : "+star1.starModelY+" : "+star1.starModelZ);
         println(star2.starModelX+" : "+star2.starModelY+" : "+star2.starModelZ);
         println(mouseX+" : "+mouseY);
 
@@ -133,9 +141,16 @@ public class MTest1 extends PApplet {
     }
 
     public void mouseClicked() {
-        focusNumber ++;
+
+        if (mouseButton == LEFT) {
+            focusNumber ++;
+        } else if (mouseButton == RIGHT) {
+            focusNumber --;
+        }
         if (focusNumber > 5) {
             focusNumber = 1;
+        } else if (focusNumber < 1) {
+            focusNumber = 5;
         }
     }
 
