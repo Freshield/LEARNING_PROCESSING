@@ -20,7 +20,7 @@ public class backgroundStar {
         parent.pushMatrix();
         parent.translate(positionX,positionY,positionZ);
 
-        parent.sphere(2);
+        parent.sphere(5);
         parent.popMatrix();
     }
 }

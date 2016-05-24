@@ -42,7 +42,7 @@ public class MTest1 extends PApplet {
     public void settings() {
         super.settings();
 
-        size(1000, 1000, OPENGL);
+        size(1500, 1500, OPENGL);
         smooth();
     }
 
@@ -57,7 +57,7 @@ public class MTest1 extends PApplet {
         star5 = new Stars(this,gTranslateX,gTranslateY,gTranslateZ,gGradeX,gGradeY,gGradeZ,255,255,255,46,169,223,48,3*gInterval+gStart,0,0.015f,0,0.02f);
 
         for (int i = 0; i < backStars.length; i++) {
-            backStars[i] = new backgroundStar(this,random(-1000,1000),random(-1000,1000),random(-1000,1000));
+            backStars[i] = new backgroundStar(this,random(-1500,1500),random(-1500,1500),random(-1500,1500));
         }
 
 
@@ -71,7 +71,6 @@ public class MTest1 extends PApplet {
         stroke(255);
         lights();
 
-
         translate(gTranslateX,gTranslateY,gTranslateZ);
 
 
@@ -81,6 +80,11 @@ public class MTest1 extends PApplet {
 
         rotateZ(radians(dragValue));
 
+
+
+
+        scale(scalar);
+
         stroke(255,0,0);
         line(0,0,0,500,0,0);
         stroke(0,255,0);
@@ -89,20 +93,29 @@ public class MTest1 extends PApplet {
         line(0,0,0,0,0,500);
 
 
+//        if (dist(mouseX,mouseY,star1.starModelX,star1.starModelY) < 50){
+//            pushMatrix();
+//            rotateY(radians(90));
+//            rotateX(radians(90));
+//            ellipse(0,0,88,88);
+//            popMatrix();
+//        }
 
-        scale(scalar);
-        pushMatrix();
-        rotateY(radians(90));
-        rotateX(radians(90));
-        ellipse(0,0,88,88);
-        popMatrix();
+
+//        stroke(255);
+//        line(0,0,500,0);
+//        line(0,0,0,500);
+//        line(star2.starModelX,star2.starModelY,star2.starModelX+500,star2.starModelY);
+//        line(star2.starModelX,star2.starModelY,star2.starModelX,star2.starModelY+500);
+//        line(star2.getStarPositionX(),star2.getStarPositionY(),star2.getStarPositionX()+500,star2.getStarPositionY());
+//        line(star2.getStarPositionX(),star2.getStarPositionY(),star2.getStarPositionX(),star2.getStarPositionY()+500);
 
         focusStars(focusNumber);
 
 
 
-
         pushMatrix();
+
 //        translate(gTranslateX,gTranslateY,gTranslateZ);
 //        rotateX(radians(gGradeX));
 //        rotateY(radians(gGradeY));
@@ -115,7 +128,6 @@ public class MTest1 extends PApplet {
 
 
 //        rotateZ(radians(dragValue));
-
 
         galaxy.draw(false);
 
@@ -132,9 +144,9 @@ public class MTest1 extends PApplet {
         popMatrix();
 
 
-        println(star1.starModelX+" : "+star1.starModelY+" : "+star1.starModelZ);
-        println(star2.starModelX+" : "+star2.starModelY+" : "+star2.starModelZ);
-        println(mouseX+" : "+mouseY);
+//        println(star1.starModelX+" : "+star1.starModelY+" : "+star1.starModelZ);
+//        println(star2.starModelX+" : "+star2.starModelY+" : "+star2.starModelZ);
+//        println(mouseX+" : "+mouseY);
 
 
 
@@ -180,17 +192,32 @@ public class MTest1 extends PApplet {
 
 
     public void mouseDragged() {
-        if (pmouseX > mouseX) {
-            dragValue = dragValue - 1;
-        } else if (pmouseX < mouseX){
-            dragValue = dragValue + 1;
+        if (mouseButton == LEFT){
+            if (pmouseX > mouseX) {
+                dragValue = dragValue - 1;
+            } else if (pmouseX < mouseX){
+                dragValue = dragValue + 1;
+            }
+        } else if (mouseButton == RIGHT) {
+            if (pmouseX > mouseX) {
+                gTranslateX = gTranslateX - 10;
+            } else if (pmouseX < mouseX){
+                gTranslateX = gTranslateX + 10;
+            }
+            if (pmouseY > mouseY) {
+                gTranslateY = gTranslateY - 10;
+            } else if (pmouseY < mouseY){
+                gTranslateY = gTranslateY + 10;
+            }
+
         }
+
 
     }
 
     public void mouseWheel(MouseEvent event) {
         float e = event.getCount();
-        println(e);
+//        println(e);
         if (e < 0) {
             scalar += 0.1;
         } else if (e > 0){
