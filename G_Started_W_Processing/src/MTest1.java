@@ -36,11 +36,13 @@ public class MTest1 extends PApplet {
     float scalar = 1;
     int focusNumber = 1;
 
+    backgroundStar[] backStars = new backgroundStar[50];
+
 
     public void settings() {
         super.settings();
 
-        size(1000, 1000, P3D);
+        size(1000, 1000, OPENGL);
         smooth();
     }
 
@@ -54,28 +56,58 @@ public class MTest1 extends PApplet {
         star4 = new Stars(this,gTranslateX,gTranslateY,gTranslateZ,gGradeX,gGradeY,gGradeZ,255,255,255,40,255,45,28,2*gInterval+gStart,0,0.02f,0,0.02f);
         star5 = new Stars(this,gTranslateX,gTranslateY,gTranslateZ,gGradeX,gGradeY,gGradeZ,255,255,255,46,169,223,48,3*gInterval+gStart,0,0.015f,0,0.02f);
 
+        for (int i = 0; i < backStars.length; i++) {
+            backStars[i] = new backgroundStar(this,random(-1000,1000),random(-1000,1000),random(-1000,1000));
+        }
+
+
 
     }
 
     public void draw(){
 
         background(0);
+
+        stroke(255);
         lights();
 
+
         translate(gTranslateX,gTranslateY,gTranslateZ);
+
+
         rotateX(radians(gGradeX));
         rotateY(radians(gGradeY));
         rotateZ(radians(gGradeZ));
 
-        scale(scalar);
-
-        focusStars(2);
-
-
-
-
         rotateZ(radians(dragValue));
 
+        stroke(255,0,0);
+        line(0,0,0,500,0,0);
+        stroke(0,255,0);
+        line(0,0,0,0,500,0);
+        stroke(0,0,255);
+        line(0,0,0,0,0,500);
+
+        scale(scalar);
+
+        focusStars(focusNumber);
+
+
+
+
+        pushMatrix();
+//        translate(gTranslateX,gTranslateY,gTranslateZ);
+//        rotateX(radians(gGradeX));
+//        rotateY(radians(gGradeY));
+//        rotateZ(radians(gGradeZ));
+
+
+//        focusStars(focusNumber);
+
+
+
+
+//        rotateZ(radians(dragValue));
 
 
         galaxy.draw(false);
@@ -85,6 +117,16 @@ public class MTest1 extends PApplet {
         star3.draw();
         star4.draw();
         star5.draw();
+
+        for (int i = 0; i < backStars.length; i++) {
+            backStars[i].draw();
+        }
+
+        popMatrix();
+
+
+        println(star2.starModelX+" : "+star2.starModelY+" : "+star2.starModelZ);
+        println(mouseX+" : "+mouseY);
 
 
 

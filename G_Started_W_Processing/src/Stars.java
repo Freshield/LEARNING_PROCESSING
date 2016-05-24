@@ -28,6 +28,8 @@ public class Stars {
     float starPositionX;
     float starPositionY;
 
+    float starModelX,starModelY,starModelZ;
+
     public Stars(PApplet _parent,float _translateX,float _translateY,float _translateZ,
                  float _gradeX, float _gradeY, float _gradeZ,
                  int _fillColorR, int _fillColorG, int _fillColorB,
@@ -54,6 +56,8 @@ public class Stars {
         revolutionSpeed = _revolutionSpeed;
         rotationAngle = _rotationAngle;
         rotationSpeed = _rotationSpeed;
+
+
     }
 
     public void draw() {
@@ -82,6 +86,10 @@ public class Stars {
 
         revolutionAngle += revolutionSpeed;
         rotationAngle += rotationSpeed;
+
+        starModelX = parent.modelX(0,0,0);
+        starModelY = parent.modelY(0,0,0);
+        starModelZ = parent.modelZ(0,0,0);
 
     }
 
