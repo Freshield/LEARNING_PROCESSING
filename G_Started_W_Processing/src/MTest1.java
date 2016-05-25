@@ -38,6 +38,8 @@ public class MTest1 extends PApplet {
 
     backgroundStar[] backStars = new backgroundStar[30];
 
+    float mGetX,mGetY;
+
 
     public void settings() {
         super.settings();
@@ -71,7 +73,10 @@ public class MTest1 extends PApplet {
         stroke(255);
         lights();
 
+//        println(mouseX+" : "+mouseY);
+
         translate(gTranslateX,gTranslateY,gTranslateZ);
+
 
 
         rotateX(radians(gGradeX));
@@ -93,28 +98,40 @@ public class MTest1 extends PApplet {
         line(0,0,0,0,0,500);
 
 
-//        if (dist(mouseX,mouseY,star1.starModelX,star1.starModelY) < 50){
-//            pushMatrix();
-//            rotateY(radians(90));
-//            rotateX(radians(90));
-//            ellipse(0,0,88,88);
-//            popMatrix();
-//        }
 
-
-//        stroke(255);
-//        line(0,0,500,0);
-//        line(0,0,0,500);
-//        line(star2.starModelX,star2.starModelY,star2.starModelX+500,star2.starModelY);
-//        line(star2.starModelX,star2.starModelY,star2.starModelX,star2.starModelY+500);
-//        line(star2.getStarPositionX(),star2.getStarPositionY(),star2.getStarPositionX()+500,star2.getStarPositionY());
-//        line(star2.getStarPositionX(),star2.getStarPositionY(),star2.getStarPositionX(),star2.getStarPositionY()+500);
 
         focusStars(focusNumber);
 
 
+//        pushMatrix();
 
-        pushMatrix();
+//        println(dist(mouseX,mouseY,star2.getStarPositionX(),star2.getStarPositionY()));
+//        println(star2.getStarPositionX()+" : "+star2.getStarPositionY());
+//        println(mouseX+" : "+mouseY);
+
+//        stroke(255);
+//        fill(255);
+//        ellipse(star2.getStarPositionX(),star2.getStarPositionY(),120,120);
+//        if (dist(mouseX,mouseY,star2.getStarPositionX(),star2.getStarPositionY()) < star2.size){
+//            pushMatrix();
+//            stroke(255);
+//            fill(255);
+//            rotateY(radians(90));
+//            rotateX(radians(90));
+//            ellipse(0,0,188,188);
+//            popMatrix();
+//        }
+
+//        stroke(255);
+//        line(0,0,500,0);
+//        line(0,0,0,500);
+//        stroke(255,0,0);
+//        line(star2.starModelX,star2.starModelY,star2.starModelX+star2.size+20,star2.starModelY);
+//        line(star2.starModelX,star2.starModelY,star2.starModelX,star2.starModelY+star2.size+20);
+//        stroke(0,255,0);
+//        line(star2.getStarPositionX(),star2.getStarPositionY(),star2.getStarPositionX()+star2.size+50,star2.getStarPositionY());
+//        line(star2.getStarPositionX(),star2.getStarPositionY(),star2.getStarPositionX(),star2.getStarPositionY()+star2.size+50);
+
 
 //        translate(gTranslateX,gTranslateY,gTranslateZ);
 //        rotateX(radians(gGradeX));
@@ -141,7 +158,7 @@ public class MTest1 extends PApplet {
             backStars[i].draw();
         }
 
-        popMatrix();
+//        popMatrix();
 
 
 //        println(star1.starModelX+" : "+star1.starModelY+" : "+star1.starModelZ);
@@ -194,9 +211,9 @@ public class MTest1 extends PApplet {
     public void mouseDragged() {
         if (mouseButton == LEFT){
             if (pmouseX > mouseX) {
-                dragValue = dragValue - 1;
+                dragValue = dragValue - 5;
             } else if (pmouseX < mouseX){
-                dragValue = dragValue + 1;
+                dragValue = dragValue + 5;
             }
         } else if (mouseButton == RIGHT) {
             if (pmouseX > mouseX) {
