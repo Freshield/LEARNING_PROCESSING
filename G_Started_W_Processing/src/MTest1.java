@@ -35,10 +35,22 @@ public class MTest1 extends PApplet {
     int dragValue = 0;
     float scalar = 1;
     int focusNumber = 1;
+    int beforeNumber = 1;
 
     backgroundStar[] backStars = new backgroundStar[30];
 
-    float mGetX,mGetY;
+
+    float movingBeginX = 20.0f;  // Initial x-coordinate
+    float movingBeginY = 10.0f;  // Initial y-coordinate
+    float movingEndX = 570.0f;   // Final x-coordinate
+    float movingEndY = 320.0f;   // Final y-coordinate
+    float movingDistX;          // X-axis distance to move
+    float movingDistY;          // Y-axis distance to move
+    float movingX = 0.0f;        // Current x-coordinate
+    float movingY = 0.0f;        // Current y-coordinate
+    float movingStep = 0.02f;    // Size of each step along the path
+    float movingPrecentage = 0.0f;      // Percentage traveled (0.0 to 1.0)
+    boolean movingKey = false;
 
 
     public void settings() {
@@ -99,8 +111,22 @@ public class MTest1 extends PApplet {
 
 
 
+//        if (movingKey) {
+//
+//            movingDistX = -star2.getStarPositionX();
+//            movingDistY = -star2.getStarPositionY();
+//            movingPrecentage += movingStep;
+//            if (movingPrecentage < 1.0) {
+//                movingX = movingPrecentage * movingDistX;
+//                movingY = movingPrecentage * movingDistY;
+//            }
+//            translate(movingX,movingY,0);
+//
+//        }
 
-        focusStars(focusNumber);
+
+        focusStars(focusNumber,beforeNumber);
+
 
 
 //        pushMatrix();
@@ -172,8 +198,14 @@ public class MTest1 extends PApplet {
     public void mouseClicked() {
 
         if (mouseButton == LEFT) {
-            focusNumber ++;
+
+            movingPrecentage = 0;
+            beforeNumber = focusNumber;
+            focusNumber++;
+
         } else if (mouseButton == RIGHT) {
+            movingPrecentage = 0;
+            beforeNumber = focusNumber;
             focusNumber --;
         }
         if (focusNumber > 5) {
@@ -183,37 +215,81 @@ public class MTest1 extends PApplet {
         }
     }
 
-    public void focusStars(int number) {
-        switch (number) {
+
+    public void focusStars(int number,int befor) {
+        switch (befor) {
             case 1:
-                translate(-star1.getStarPositionX(),-star1.getStarPositionY(),0);
+                movingBeginX = -star1.getStarPositionX();
+                movingBeginY = -star1.getStarPositionY();
                 break;
             case 2:
-                translate(-star2.getStarPositionX(),-star2.getStarPositionY(),0);
-
+                movingBeginX = -star2.getStarPositionX();
+                movingBeginY = -star2.getStarPositionY();
                 break;
             case 3:
-                translate(-star3.getStarPositionX(),-star3.getStarPositionY(),0);
+                movingBeginX = -star3.getStarPositionX();
+                movingBeginY = -star3.getStarPositionY();
                 break;
             case 4:
-                translate(-star4.getStarPositionX(),-star4.getStarPositionY(),0);
+                movingBeginX = -star4.getStarPositionX();
+                movingBeginY = -star4.getStarPositionY();
                 break;
             case 5:
-                translate(-star5.getStarPositionX(),-star5.getStarPositionY(),0);
+                movingBeginX = -star5.getStarPositionX();
+                movingBeginY = -star5.getStarPositionY();
                 break;
             default:
-                translate(-star1.getStarPositionX(),-star1.getStarPositionY(),0);
+                movingBeginX = -star1.getStarPositionX();
+                movingBeginY = -star1.getStarPositionY();
                 break;
         }
+        switch (number) {
+            case 1:
+                movingEndX = -star1.getStarPositionX();
+                movingEndY = -star1.getStarPositionY();
+                break;
+            case 2:
+                movingEndX = -star2.getStarPositionX();
+                movingEndY = -star2.getStarPositionY();
+                break;
+            case 3:
+                movingEndX = -star3.getStarPositionX();
+                movingEndY = -star3.getStarPositionY();
+                break;
+            case 4:
+                movingEndX = -star4.getStarPositionX();
+                movingEndY = -star4.getStarPositionY();
+                break;
+            case 5:
+                movingEndX = -star5.getStarPositionX();
+                movingEndY = -star5.getStarPositionY();
+                break;
+            default:
+                movingEndX = -star1.getStarPositionX();
+                movingEndY = -star1.getStarPositionY();
+                break;
+        }
+        movingDistX = movingEndX - movingBeginX;
+        movingDistY = movingEndY - movingBeginY;
+        if (movingPrecentage < 1.0) {
+            movingX = movingBeginX + movingPrecentage * movingDistX;
+            movingY = movingBeginY + movingPrecentage * movingDistY;
+            movingPrecentage += movingStep;
+        } else {
+            movingX = movingEndX;
+            movingY = movingEndY;
+        }
+        translate(movingX,movingY,0);
     }
+
 
 
     public void mouseDragged() {
         if (mouseButton == LEFT){
             if (pmouseX > mouseX) {
-                dragValue = dragValue - 5;
+                dragValue = dragValue - 3;
             } else if (pmouseX < mouseX){
-                dragValue = dragValue + 5;
+                dragValue = dragValue + 3;
             }
         } else if (mouseButton == RIGHT) {
             if (pmouseX > mouseX) {
