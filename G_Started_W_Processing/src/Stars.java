@@ -96,6 +96,17 @@ public class Stars {
 
     }
 
+    public void drawTap(int fillR,int fillG,int fillAlpha,int fillB,int strokeR,int strokeG,int strokeB) {
+
+        parent.pushMatrix();
+        starPositionX = parent.cos(revolutionAngle) * radiux;
+        starPositionY = parent.sin(revolutionAngle) * radiux;
+        parent.translate(starPositionX,starPositionY,0);
+        parent.fill(fillR,fillG,fillB,fillAlpha);
+        parent.stroke(strokeR,strokeG,strokeB);
+
+    }
+
     public float getStarPositionX() {
         return parent.cos(revolutionAngle) * radiux;
     }
