@@ -48,8 +48,8 @@ public class MTest1 extends PApplet {
     float movingDistY;          // Y-axis distance to move
     float movingX = 0.0f;        // Current x-coordinate
     float movingY = 0.0f;        // Current y-coordinate
-    float movingStep = 0.02f;    // Size of each step along the path
-    float movingPrecentage = 0.0f;      // Percentage traveled (0.0 to 1.0)
+    float movingStep = 0.04f;    // Size of each step along the path
+    float movingPrecentage = 1;      // Percentage traveled (0.0 to 1.0)
     boolean movingKey = false;
 
 
@@ -64,16 +64,17 @@ public class MTest1 extends PApplet {
 
         galaxy = new GalaxyCoordinator(this,gTranslateX, gTranslateY,gTranslateZ,gGradeX,gGradeY,gGradeZ,gNumberOfCircles,gInterval,gColorR,gColorG,gColorB,gTransparent,gStart);
 
-        star1 = new Stars(this,gTranslateX,gTranslateY,gTranslateZ,gGradeX,gGradeY,gGradeZ,255,255,255,255,0,0,86,0,0,0,0,0.02f);
-        star2 = new Stars(this,gTranslateX,gTranslateY,gTranslateZ,gGradeX,gGradeY,gGradeZ,255,255,255,0,0,255,38,0*gInterval+gStart,0,0.01f,0,0.02f);
-        star3 = new Stars(this,gTranslateX,gTranslateY,gTranslateZ,gGradeX,gGradeY,gGradeZ,255,255,255,0,255,255,18,1*gInterval+gStart,0,0.03f,0,0.03f);
-        star4 = new Stars(this,gTranslateX,gTranslateY,gTranslateZ,gGradeX,gGradeY,gGradeZ,255,255,255,40,255,45,28,2*gInterval+gStart,0,0.02f,0,0.02f);
-        star5 = new Stars(this,gTranslateX,gTranslateY,gTranslateZ,gGradeX,gGradeY,gGradeZ,255,255,255,46,169,223,48,3*gInterval+gStart,0,0.015f,0,0.02f);
+        star1 = new Stars(this,gTranslateX,gTranslateY,gTranslateZ,gGradeX,gGradeY,gGradeZ,255,255,255,255,0,0,86,0,0,0,0,0.02f,"Star1");
+        star2 = new Stars(this,gTranslateX,gTranslateY,gTranslateZ,gGradeX,gGradeY,gGradeZ,255,255,255,0,0,255,38,0*gInterval+gStart,0,0.01f,0,0.02f,"Star2");
+        star3 = new Stars(this,gTranslateX,gTranslateY,gTranslateZ,gGradeX,gGradeY,gGradeZ,255,255,255,0,255,255,18,1*gInterval+gStart,0,0.03f,0,0.03f,"Star3");
+        star4 = new Stars(this,gTranslateX,gTranslateY,gTranslateZ,gGradeX,gGradeY,gGradeZ,255,255,255,40,255,45,28,2*gInterval+gStart,0,0.02f,0,0.02f,"Star4");
+        star5 = new Stars(this,gTranslateX,gTranslateY,gTranslateZ,gGradeX,gGradeY,gGradeZ,255,255,255,46,169,223,48,3*gInterval+gStart,0,0.015f,0,0.02f,"Star5");
 
         for (int i = 0; i < backStars.length; i++) {
             backStars[i] = new backgroundStar(this,random(-1500,1500),random(-1500,1500),random(-1500,1500));
         }
 
+        frameRate(40);
 
 
     }
@@ -174,6 +175,8 @@ public class MTest1 extends PApplet {
 
         galaxy.draw(false);
 
+        noLights();
+        pointLight(255,255,255,0,0,0);
         star1.draw();
         star2.draw();
         star3.draw();
@@ -217,6 +220,8 @@ public class MTest1 extends PApplet {
 
 
     public void focusStars(int number,int befor) {
+        float starSize;
+        String starName;
         switch (befor) {
             case 1:
                 movingBeginX = -star1.getStarPositionX();
@@ -243,34 +248,49 @@ public class MTest1 extends PApplet {
                 movingBeginY = -star1.getStarPositionY();
                 break;
         }
+
         switch (number) {
             case 1:
+                starSize = star1.size;
+                starName = star1.name;
                 movingEndX = -star1.getStarPositionX();
                 movingEndY = -star1.getStarPositionY();
                 break;
             case 2:
+                starSize = star2.size;
+                starName = star2.name;
                 movingEndX = -star2.getStarPositionX();
                 movingEndY = -star2.getStarPositionY();
                 break;
             case 3:
+                starSize = star3.size;
+                starName = star3.name;
                 movingEndX = -star3.getStarPositionX();
                 movingEndY = -star3.getStarPositionY();
                 break;
             case 4:
+                starSize = star4.size;
+                starName = star4.name;
                 movingEndX = -star4.getStarPositionX();
                 movingEndY = -star4.getStarPositionY();
                 break;
             case 5:
+                starSize = star5.size;
+                starName = star5.name;
                 movingEndX = -star5.getStarPositionX();
                 movingEndY = -star5.getStarPositionY();
                 break;
             default:
+                starSize = star1.size;
+                starName = star1.name;
                 movingEndX = -star1.getStarPositionX();
                 movingEndY = -star1.getStarPositionY();
                 break;
         }
+
         movingDistX = movingEndX - movingBeginX;
         movingDistY = movingEndY - movingBeginY;
+
         if (movingPrecentage < 1.0) {
             movingX = movingBeginX + movingPrecentage * movingDistX;
             movingY = movingBeginY + movingPrecentage * movingDistY;
@@ -278,7 +298,25 @@ public class MTest1 extends PApplet {
         } else {
             movingX = movingEndX;
             movingY = movingEndY;
+            fill(255);
+            stroke(103);
+            rectMode(CENTER);
+            pushMatrix();
+//            rotateZ(radians(-30));
+//            rotateZ(radians(-dragValue));
+//            translate(0,2,0);
+            rotateX(radians(-90));
+//            rect(0,-starSize-40,120,40);
+            translate(0,-starSize-40,0);
+            box(120,40,5);
+            fill(0);
+            textSize(26);
+            textAlign(CENTER);
+            text(starName,0,5,8);
+            popMatrix();
+
         }
+
         translate(movingX,movingY,0);
     }
 

@@ -24,6 +24,7 @@ public class Stars {
     float revolutionSpeed;
     float rotationAngle;
     float rotationSpeed;
+    String name;
 
     float starPositionX;
     float starPositionY;
@@ -35,7 +36,7 @@ public class Stars {
                  int _fillColorR, int _fillColorG, int _fillColorB,
                  int _strokeColorR, int _strokeColorG, int _strokeColorB,
                  int _size, float _radiux, float _revolutionAngle, float _revolutionSpeed,
-                 float _rotationAngle, float _rotationSpeed) {
+                 float _rotationAngle, float _rotationSpeed, String _name) {
 
         parent = _parent;
         translateX = _translateX;
@@ -56,6 +57,7 @@ public class Stars {
         revolutionSpeed = _revolutionSpeed;
         rotationAngle = _rotationAngle;
         rotationSpeed = _rotationSpeed;
+        name = _name;
 
 
     }
